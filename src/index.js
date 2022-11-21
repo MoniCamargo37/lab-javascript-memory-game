@@ -50,11 +50,12 @@ window.addEventListener("load", (event) => {
   document.querySelectorAll(".card").forEach((card) => {
     card.addEventListener("click", () => {
       // TODO: write some code here
-      card.classList.toggle("turned");
       cardCounter++;
       if (cardCounter === 1) {
+        card.classList.toggle("turned");
         card1 = card;
       } else if (cardCounter === 2) {
+        card.classList.toggle("turned");
         card2 = card;
         if (
           memoryGame.checkIfPair(
